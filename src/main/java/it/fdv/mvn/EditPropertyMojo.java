@@ -9,12 +9,9 @@ import org.apache.maven.plugin.MojoFailureException;
 import org.apache.maven.plugins.annotations.Mojo;
 import org.apache.maven.plugins.annotations.Parameter;
 import org.apache.maven.project.MavenProject;
-import org.codehaus.plexus.util.xml.Xpp3Dom;
-import org.codehaus.plexus.util.xml.Xpp3DomBuilder;
 import org.codehaus.plexus.util.xml.pull.XmlPullParserException;
 
 import java.io.*;
-import java.util.Properties;
 
 @Mojo(name = "edit-property")
 public class EditPropertyMojo extends AbstractMojo {
@@ -62,7 +59,7 @@ public class EditPropertyMojo extends AbstractMojo {
             writer.write(fileWriter, model);
             fileWriter.close();
         } catch (IOException | XmlPullParserException e) {
-            getLog().error("Error during saving the file pom.xml", e);
+            getLog().error("Error saving pom.xml file", e);
         }
     }
 }

@@ -51,7 +51,7 @@
     <repository>
       <id>github</id>
       <name>GitHub Apache Maven Packages</name>
-      <url>https://maven.pkg.github.com/fdelvivo/maven-project-properties-manager</url>
+      <url>https://maven.pkg.github.com/delvivo/maven-project-properties-manager</url>
     </repository>
   </distributionManagement>
 </project>
